@@ -15,38 +15,39 @@
     </header>
 
     <div class="mx-auto flex justify-center mt-10">
-        <div class = "flex flex-col bg-slate-500 w-1/4 px-10 pb-10 drop-shadow-2xl">
-            <div class = "flex justify-center mt-10">
-                <input type="text" class=" w-96 px-5 bg-yellow-300 text-3xl" style="height:90px">
-            </div>
-            <div class ="flex justify-center gap-12 mt-5">
-                <div class= "grid grid-cols-3 gap-3 mt-10 font-bold">
-                    <button class="rounded w-14 h-14  bg-gray-200">7</button>
-                    <button class="rounded w-14 bg-gray-200 ">8</button>
-                    <button class="rounded w-14 bg-gray-200">9</button>
-                    <button class="rounded w-14 h-14 bg-gray-200">4</button>
-                    <button class="rounded w-14 bg-gray-200">5</button>
-                    <button class="rounded w-14 bg-gray-200">6</button>
-                    <button class="rounded w-14 h-14 bg-gray-200">1</button>
-                    <button class="rounded w-14 bg-gray-200">2</button>
-                    <button class="rounded w-14 bg-gray-200">3</button>
-                    <button class="rounded w-28 h-14 bg-gray-200 col-span-2">0</button>
-                    <button class="rounded w-14 bg-gray-200 ">.</button>
+        <form name = "form_1">
+            <div class = "flex flex-col bg-slate-500 w-900 px-10 pb-10 drop-shadow-2xl">
+                <div class = "flex justify-center mt-10">
+                    <input type="text" name = "answer" class=" w-96 px-5 bg-yellow-300 text-3xl" style="height:90px">
                 </div>
-                <div class="grid grid-cols-2 gap-3 mt-10 font-bold">
-                    <button class="rounded w-14 bg-gray-200">C</button>
-                    <button class="rounded w-14 bg-gray-200">CE</button>
-                    <button class="rounded w-14 bg-gray-200 bg-blue-200">+</button>
-                    <button class="rounded w-14 bg-gray-200 bg-blue-200">-</button>
-                    <button class="rounded w-14 bg-gray-200 bg-blue-200">X</button>
-                    <button class="rounded w-14 bg-gray-200 bg-blue-200">/</button>
-                    <button class="rounded w-14 bg-gray-200 bg-red-200">=</button>
-                    <button class="rounded w-14 bg-gray-200">%</button>
+                <div class ="flex justify-center gap-12 mt-5">
+                    <div class= "grid grid-cols-3 gap-3 mt-10 font-bold">
+                        <input type = "button" class="rounded w-14 h-14  bg-gray-200" value="7" onclick="form_1.answer.value += '7'">
+                        <input type = "button" class="rounded w-14 bg-gray-200" value = "8" onclick="form_1.answer.value += '8'">
+                        <input type = "button" class="rounded w-14 bg-gray-200" value = "9" onclick="form_1.answer.value += '9'">
+                        <input type ="button" class="rounded w-14 h-14 bg-gray-200" value = "4" onclick="form_1.answer.value += '4'">
+                        <input type = "button" class="rounded w-14 bg-gray-200" value = "5" onclick="form_1.answer.value += '5'">
+                        <input type = "button" class="rounded w-14 bg-gray-200" value = "6" onclick="form_1.answer.value += '6'">
+                        <input type ="button" class="rounded w-14 h-14 bg-gray-200" value = "1" onclick="form_1.answer.value += '1'">
+                        <input type = "button" class="rounded w-14 bg-gray-200" value = "2" onclick="form_1.answer.value += '2'">
+                        <input type = "button" class="rounded w-14 bg-gray-200" value = "3" onclick="form_1.answer.value += '3'">
+                        <input type = "button" class="rounded w-28 h-14 bg-gray-200 col-span-2" value = "0" onclick="form_1.answer.value += '0'">
+                        <input type = "button" class="rounded w-14 h-14 bg-gray-200" value = "." onclick="form_1.answer.value += '.'">
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mt-10 font-bold">
+                        <input type ="button" class="rounded w-14  bg-red-200" value = "C" onclick="form_1.answer.value = ''">
+                        <input type = "button" class="rounded w-14 bg-blue-200" value = "+" onclick="form_1.answer.value += '+'">
+                        <input type = "button" class="rounded w-14 bg-blue-200" value = "-" onclick = "form_1.answer.value += '-'">
+                        <input type = "button" class="rounded w-14 bg-blue-200" value = "X" onclick = "form_1.answer.value += '*'">
+                        <input type = "button" class="rounded w-14 bg-blue-200" value = "/" onclick = "form_1.answer.value += '/'">
+                        <input type ="button" class="rounded w-14 bg-green-200 row-span-2" value = "=" onclick="form_1.answer.value = eval(form_1.answer.value )">
+                        <input type = "button" class="rounded w-14 bg-blue-200" value = "%" onclick = "form_1.answer.value += '%'">
+                    </div>
+                    
                 </div>
+            
             </div>
-          
-        </div>
-       
+       </form>
     </div>
     
     
